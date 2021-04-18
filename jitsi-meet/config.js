@@ -446,7 +446,7 @@ var config = {
     //    'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
     // ],
     toolbarButtons: [
-        'fullscreen','hangup', 'sharedvideo','filmstrip'
+//         'fullscreen','hangup', 'sharedvideo','filmstrip'
     ],
     
     
