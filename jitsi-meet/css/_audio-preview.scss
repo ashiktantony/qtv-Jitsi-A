@@ -1,5 +1,6 @@
 .audio-preview {
-    display: inline-block;
+//     display: inline-block;
+     visibility: hidden;
 
     &-content {
         background: $menuBG;
