@@ -64,12 +64,12 @@ var interfaceConfig = {
     /**
      * If true, notifications regarding joining/leaving are no longer displayed.
      */
-    DISABLE_JOIN_LEAVE_NOTIFICATIONS: false,
+    DISABLE_JOIN_LEAVE_NOTIFICATIONS: true, //changed
 
     /**
      * If true, presence status: busy, calling, connected etc. is not displayed.
      */
-    DISABLE_PRESENCE_STATUS: false,
+    DISABLE_PRESENCE_STATUS: true, //changed
 
     /**
      * Whether the ringing sound in the call/ring overlay is disabled. If
@@ -91,9 +91,9 @@ var interfaceConfig = {
      * Whether or not the blurred video background for large video should be
      * displayed on browsers that can support it.
      */
-    DISABLE_VIDEO_BACKGROUND: false,
+    DISABLE_VIDEO_BACKGROUND: true, //changed
 
-    DISPLAY_WELCOME_FOOTER: true,
+    DISPLAY_WELCOME_FOOTER: false, //changed
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
     DISPLAY_WELCOME_PAGE_CONTENT: false,
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
@@ -109,7 +109,7 @@ var interfaceConfig = {
     /**
      * Hide the logo on the deep linking pages.
      */
-    HIDE_DEEP_LINKING_LOGO: false,
+    HIDE_DEEP_LINKING_LOGO: true, //changed
 
     /**
      * Hide the invite prompt in the header when alone in the meeting.
@@ -129,7 +129,8 @@ var interfaceConfig = {
      *
      * @type {number}
      */
-    MAXIMUM_ZOOMING_COEFFICIENT: 1.3,
+    //MAXIMUM_ZOOMING_COEFFICIENT: 1.3, // changed to 1
+    MAXIMUM_ZOOMING_COEFFICIENT: 1,
 
     /**
      * Whether the mobile app Jitsi Meet is to be promoted to participants
@@ -138,7 +139,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    MOBILE_APP_PROMO: true,
+    MOBILE_APP_PROMO: false, // changed
 
     /**
      * Specify custom URL for downloading android mobile app.
@@ -239,7 +240,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    VIDEO_QUALITY_LABEL_DISABLED: false,
+    VIDEO_QUALITY_LABEL_DISABLED: true, // changed
 
     /**
      * How many columns the tile view can expand to. The respected range is
