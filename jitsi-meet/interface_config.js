@@ -52,15 +52,18 @@ var interfaceConfig = {
     CONNECTION_INDICATOR_DISABLED: false,
 
     DEFAULT_BACKGROUND: '#474747',
-    DEFAULT_LOCAL_DISPLAY_NAME: 'me',
+//     DEFAULT_LOCAL_DISPLAY_NAME: 'me', //changed
     DEFAULT_LOGO_URL: 'images/watermark.svg',
-    DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster',
+//     DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster', //changed
     DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_REMOTE_DISPLAY_NAME: '🧘',//added
+    DEFAULT_LOCAL_DISPLAY_NAME: '❤️',//added
 
-    DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
+//     DISABLE_DOMINANT_SPEAKER_INDICATOR: false, //changed
 
-    DISABLE_FOCUS_INDICATOR: false,
-
+//     DISABLE_FOCUS_INDICATOR: false, //changed
+    DISABLE_FOCUS_INDICATOR: true, //added
+    DISABLE_DOMINANT_SPEAKER_INDICATOR: true, //added
     /**
      * If true, notifications regarding joining/leaving are no longer displayed.
      */
@@ -85,7 +88,8 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    DISABLE_TRANSCRIPTION_SUBTITLES: false,
+//     DISABLE_TRANSCRIPTION_SUBTITLES: false, //changed
+    DISABLE_TRANSCRIPTION_SUBTITLES=true; //added
 
     /**
      * Whether or not the blurred video background for large video should be
@@ -95,7 +99,7 @@ var interfaceConfig = {
 
     DISPLAY_WELCOME_FOOTER: false, //changed
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
-    DISPLAY_WELCOME_PAGE_CONTENT: false,
+//     DISPLAY_WELCOME_PAGE_CONTENT: false, //changed
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
 
     ENABLE_DIAL_OUT: true,
@@ -104,8 +108,9 @@ var interfaceConfig = {
 
     FILM_STRIP_MAX_HEIGHT: 120,
 
-    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
-
+//     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
+    GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,
+    DISPLAY_WELCOME_PAGE_CONTENT: false,
     /**
      * Hide the logo on the deep linking pages.
      */
@@ -172,7 +177,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    RECENT_LIST_ENABLED: true,
+    RECENT_LIST_ENABLED: false, //toggled
     REMOTE_THUMBNAIL_RATIO: 1, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar' ],
