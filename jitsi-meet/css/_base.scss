@@ -8,6 +8,9 @@
     user-select: none;
 }
 
+#modal-dialog-cancel-button { //added
+    visibility: hidden;
+}
 input,
 textarea {
     -webkit-user-select: text;
