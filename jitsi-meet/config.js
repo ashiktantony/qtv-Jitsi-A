@@ -445,7 +445,15 @@ var config = {
     //    'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
     //    'tileview', 'select-background', 'download', 'help', 'mute-everyone', 'mute-video-everyone', 'security'
     // ],
-
+    toolbarButtons: [
+        'fullscreen',
+        'hangup', 
+        'sharedvideo',
+       'filmstrip',
+       'mute-everyone'
+    ],
+    
+    
     // Stats
     //
 
