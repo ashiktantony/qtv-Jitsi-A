@@ -231,7 +231,7 @@ var interfaceConfig = {
      * Whether to show thumbnails in filmstrip as a column instead of as a row.
      */
     VERTICAL_FILMSTRIP: true,
-    SET_FILMSTRIP_ENABLED:true,
+//     SET_FILMSTRIP_ENABLED:true,
 
     // Determines how the video would fit the screen. 'both' would fit the whole
     // screen, 'height' would fit the original video height to the height of the
