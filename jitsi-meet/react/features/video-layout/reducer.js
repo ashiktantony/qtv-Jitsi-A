@@ -6,7 +6,7 @@ import {
     SCREEN_SHARE_REMOTE_PARTICIPANTS_UPDATED,
     SET_TILE_VIEW
 } from './actionTypes';
-import { PersistenceRegistry } from '../base/storage';
+import { PersistenceRegistry } from '../base/redux';
 const DEFAULT_STATE = {
     remoteScreenShares: [],
 
