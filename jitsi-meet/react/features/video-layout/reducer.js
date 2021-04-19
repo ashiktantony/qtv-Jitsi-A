@@ -6,7 +6,7 @@ import {
     SCREEN_SHARE_REMOTE_PARTICIPANTS_UPDATED,
     SET_TILE_VIEW
 } from './actionTypes';
-
+import { PersistenceRegistry } from '../base/storage';
 const DEFAULT_STATE = {
     remoteScreenShares: [],
 
@@ -24,6 +24,9 @@ const DEFAULT_STATE = {
 };
 
 const STORE_NAME = 'features/video-layout';
+PersistenceRegistry.register(STORE_NAME, { //added
+    tileViewEnabled: false
+});
 
 ReducerRegistry.register(STORE_NAME, (state = DEFAULT_STATE, action) => {
     switch (action.type) {
@@ -37,7 +40,8 @@ ReducerRegistry.register(STORE_NAME, (state = DEFAULT_STATE, action) => {
     case SET_TILE_VIEW:
         return {
             ...state,
-            tileViewEnabled: action.enabled
+            tileViewEnabled: action.enabled 
+
         };
     }
 
