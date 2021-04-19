@@ -1,6 +1,5 @@
 /* global APP, $, config */
 
-
 const UI = {};
 
 import EventEmitter from 'events';
@@ -17,6 +16,7 @@ import {
     setToolboxEnabled,
     showToolbox
 } from '../../react/features/toolbox/actions.web';
+import { setTileView } from '../../react/features/video-layout/actions'; //added
 import UIEvents from '../../service/UI/UIEvents';
 
 import EtherpadManager from './etherpad/Etherpad';
@@ -126,6 +126,8 @@ UI.start = function() {
 
     sharedVideoManager = new SharedVideoManager(eventEmitter);
 
+    APP.store.dispatch(setFilmstripVisible(false)); //added
+    
     if (isMobileBrowser()) {
         $('body').addClass('mobile-browser');
     } else {
