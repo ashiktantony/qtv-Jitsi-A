@@ -157,8 +157,8 @@ function getCameraVideoPosition( // eslint-disable-line max-params
         videoSpaceHeight = window.innerHeight;
     }
 
-    const horizontalIndent = (videoSpaceWidth - videoWidth) / 2;
-    const verticalIndent = (videoSpaceHeight - videoHeight) / 2;
+    const horizontalIndent = (videoSpaceWidth - videoWidth) / 5; //changed
+    const verticalIndent = (videoSpaceHeight - videoHeight) / 5;
 
     return { horizontalIndent,
         verticalIndent };
