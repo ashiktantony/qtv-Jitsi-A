@@ -800,7 +800,8 @@ class Toolbox extends Component<Props> {
         sendAnalytics(createToolbarEvent(
             'toggle.fullscreen',
                 {
-                    enable: !this.props._fullScreen
+//                     enable: !this.props._fullScreen //changed
+                        enable:true
                 }));
         this._closeOverflowMenuIfOpen();
         this._doToggleFullScreen();
