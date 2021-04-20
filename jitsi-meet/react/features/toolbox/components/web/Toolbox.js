@@ -446,7 +446,7 @@ class Toolbox extends Component<Props> {
      * @returns {void}
      */
     _doToggleFullScreen() {
-        const fullScreen = !this.props._fullScreen;
+        const fullScreen = true;//!this.props._fullScreen;
 
         this.props.dispatch(setFullScreen(fullScreen));
     }
