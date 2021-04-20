@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="manifest" id="manifest-placeholder">
 
+      // added start
+     <script language="javascript" type="text/javascript">
+    window.open("Login.aspx", "secondWindow", 
+    "fullscreen,scrollbars='yes',statusbar='yes',location='no'").focus();
+
+    //set new window as the opener to bypass alert
+    window.opener = 'secondWindow';
+
+    //close original window that was the inital opener without alert
+    window.self.close();
+    </script>
+      // add ended
+      
     <script>
         // Dynamically generate the manifest location URL. It must be served from the document origin, and we may have
         // the base pointing to the CDN. This way we can generate a full URL which will bypass the base.
