@@ -446,7 +446,7 @@ class Toolbox extends Component<Props> {
      * @returns {void}
      */
     _doToggleFullScreen() {
-        const fullScreen = true;//!this.props._fullScreen;
+        const fullScreen = !this.props._fullScreen;
 
         this.props.dispatch(setFullScreen(fullScreen));
     }
@@ -800,8 +800,8 @@ class Toolbox extends Component<Props> {
         sendAnalytics(createToolbarEvent(
             'toggle.fullscreen',
                 {
-//                     enable: !this.props._fullScreen //changed
-                        enable:true
+                    enable: !this.props._fullScreen //changed
+//                         enable:true
                 }));
         this._closeOverflowMenuIfOpen();
         this._doToggleFullScreen();
