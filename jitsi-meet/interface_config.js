@@ -53,9 +53,9 @@ var interfaceConfig = {
 
     DEFAULT_BACKGROUND: '#474747',
 //     DEFAULT_LOCAL_DISPLAY_NAME: 'me', //changed
-    DEFAULT_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_LOGO_URL: 'images/watermark.png',
 //     DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster', //changed
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.png',
     DEFAULT_REMOTE_DISPLAY_NAME: '🧘',//added
     DEFAULT_LOCAL_DISPLAY_NAME: '❤️',//added
 
@@ -105,7 +105,7 @@ var interfaceConfig = {
 
     ENABLE_FEEDBACK_ANIMATION: false, // Enables feedback star animation.
 
-    FILM_STRIP_MAX_HEIGHT: 10,
+    FILM_STRIP_MAX_HEIGHT: 20,
 
 //     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,
@@ -197,7 +197,7 @@ var interfaceConfig = {
     SHOW_CHROME_EXTENSION_BANNER: false,
 
     SHOW_DEEP_LINKING_IMAGE: false,
-    SHOW_JITSI_WATERMARK: false,
+    SHOW_JITSI_WATERMARK: true,
     SHOW_POWERED_BY: false,
     SHOW_PROMOTIONAL_CLOSE_PAGE: false,
 
@@ -230,14 +230,14 @@ var interfaceConfig = {
     /**
      * Whether to show thumbnails in filmstrip as a column instead of as a row.
      */
-    VERTICAL_FILMSTRIP: true,
+    VERTICAL_FILMSTRIP: false,
 //     SET_FILMSTRIP_ENABLED:true,
 
     // Determines how the video would fit the screen. 'both' would fit the whole
     // screen, 'height' would fit the original video height to the height of the
     // screen, 'width' would fit the original video width to the width of the
     // screen respecting ratio.
-    VIDEO_LAYOUT_FIT: 'both',
+    VIDEO_LAYOUT_FIT: 'widh', //changed from both
 
     /**
      * If true, hides the video quality label indicating the resolution status
