@@ -105,7 +105,7 @@ var interfaceConfig = {
 
     ENABLE_FEEDBACK_ANIMATION: false, // Enables feedback star animation.
 
-    FILM_STRIP_MAX_HEIGHT: 20,
+    FILM_STRIP_MAX_HEIGHT: 70,
 
 //     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: true,
     GENERATE_ROOMNAMES_ON_WELCOME_PAGE: false,
@@ -134,7 +134,7 @@ var interfaceConfig = {
      * @type {number}
      */
     //MAXIMUM_ZOOMING_COEFFICIENT: 1.3, // changed to 1
-    MAXIMUM_ZOOMING_COEFFICIENT: 1.0,
+    MAXIMUM_ZOOMING_COEFFICIENT: 1.2,
 
     /**
      * Whether the mobile app Jitsi Meet is to be promoted to participants
