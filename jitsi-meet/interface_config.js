@@ -134,7 +134,7 @@ var interfaceConfig = {
      * @type {number}
      */
     //MAXIMUM_ZOOMING_COEFFICIENT: 1.3, // changed to 1
-    MAXIMUM_ZOOMING_COEFFICIENT: 1,
+    MAXIMUM_ZOOMING_COEFFICIENT: 0.5,
 
     /**
      * Whether the mobile app Jitsi Meet is to be promoted to participants
@@ -230,14 +230,14 @@ var interfaceConfig = {
     /**
      * Whether to show thumbnails in filmstrip as a column instead of as a row.
      */
-    VERTICAL_FILMSTRIP: false,
+    VERTICAL_FILMSTRIP: true,
 //     SET_FILMSTRIP_ENABLED:true,
 
     // Determines how the video would fit the screen. 'both' would fit the whole
     // screen, 'height' would fit the original video height to the height of the
     // screen, 'width' would fit the original video width to the width of the
     // screen respecting ratio.
-    VIDEO_LAYOUT_FIT: 'widh', //changed from both
+    VIDEO_LAYOUT_FIT: 'width', //changed from both
 
     /**
      * If true, hides the video quality label indicating the resolution status
